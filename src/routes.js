@@ -54,5 +54,7 @@ routes.get('/upload', (req, res) => {
   return  res.json(files[0])
 });
 
-
+routes.put('/upload', (req, res) => {
+    return res.json(files.splice(0, 900))
+})
 module.exports = routes;
