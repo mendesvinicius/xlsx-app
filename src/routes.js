@@ -46,7 +46,7 @@ routes.post('/upload', upload.single('file'), (req, res) => {
           files.unshift(result)
       });
     } catch(e) {
-      res.json({error_code: 1, err_desc: "Corrupted excel file"})
+      res.json({error_code: 1, err_desc: "Corrupted excel files"})
     }
   });
 /* }) */
